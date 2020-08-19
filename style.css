@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0 2.25rem;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  background-color: hsl(257, 40%, 49%);
+  background-image: url(images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: white;
+}
+
+h2 {
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  padding: 2rem 0;
+}
+
+.logo {
+  height: 32px;
+}
+
+.illustration {
+  width: 100%;
+  margin: 1.5rem 0;
+}
+
+.description {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.description p {
+  line-height: 1.5;
+}
+
+button {
+  height: 35px;
+  width: 190px;
+  margin: 0.75rem 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  background-color: white;
+  color: hsl(257, 40%, 49%);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+footer {
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+footer span {
+  height: 1.5rem;
+  width: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.75rem;
+  border: 1px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+footer span:last-of-type {
+  margin-right: 0;
+}
+
+@media only screen and (min-width: 640px) {
+  body {
+    background-image: url(images/bg-desktop.svg);
+    background-size: 100%;
+  }
+
+  section {
+    display: flex;
+  }
+
+  .illustration {
+    margin: 0.5rem 1.75rem 0 0;
+  }
+
+  .description {
+    text-align: start;
+  }
+
+  button {
+    height: 40px;
+    width: 145px;
+  }
+
+  footer {
+    height: 70px;
+    justify-content: flex-end;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    padding: 0 3.5rem;
+  }
+
+  .logo {
+    height: 40px;
+  }
+
+  .illustration {
+    margin: 1.25rem 3rem 0 0;
+  }
+
+  h2 {
+    font-size: 36px;
+    margin-bottom: 0;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
